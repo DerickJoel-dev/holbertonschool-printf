@@ -27,12 +27,18 @@ It supports the following format specifiers:
 ```c
 int _printf(const char *format, ...);
 
-Compilation
+### Compilation
 To compile the code, use the following command:
+---
+
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 Usage
-Syntax
+
+### Syntax
 To call the _printf() function, include the header file main.h and follow this structure:
+---
+```c
+
 #include "main.h"
 
 int main()
@@ -40,11 +46,22 @@ int main()
     _printf("string to print");
     return 0;
 }
-Compilation
+---
+
+### Compilation
 To compile the program using a makefile, run the following command:
+```c
+
 $ make -f makefile
+---
+
 This will create an executable file named main.out.
+---
+
 To run the program, use the following command:
+
 $ ./main.out
-Authors
+---
+### Authors
+
 Derick Quiñones Medina
