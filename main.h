@@ -3,14 +3,14 @@
 #include <stdarg.h>
 #include <stddef.h>
 /**
- * struct type_s - struct type_s
+ * struct type_s - Struct type_s
  * @opt: options
  * @f: the associated function
  */
 typedef struct type_s
 {
-  char opt;
-  int (*f)(va_list);
+	char opt;
+	int (*f)(va_list);
 } type_t;
 
 int (*get_func(char s))(va_list);
